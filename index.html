@@ -19,6 +19,7 @@
     
     
     <div id="app">
+        <div v-if="mailArray < numberMails">Loading...</div>
         <ul>
             <li v-for=" email in mailArray">
                 {{ email }}
