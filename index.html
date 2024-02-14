@@ -13,12 +13,52 @@
         defer>
     </script>
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Aggiungi il tuo CSS qui */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
     
     
-    <div id="app">
+    <div id="app" class="container w-25">
         <div v-if="mailArray < numberMails">Loading...</div>
         <ul>
             <li v-for=" email in mailArray">
